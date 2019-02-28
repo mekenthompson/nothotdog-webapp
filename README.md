@@ -1,2 +1,2 @@
 # nothotdog-webapp
-Front end web app for nothotdog image classifier using Azure Custom Vision
+Python Web App to use Azure Custom Vision Classifier
