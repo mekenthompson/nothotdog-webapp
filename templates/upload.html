@@ -6,13 +6,10 @@
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>File Uploader</h1>
+        <h1>NotHotDog</h1>
         <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*" multiple>
         <input type="submit" value="send">
         </form>
-    <br>training_key: {{TRAINING_KEY}}
-    <br>prediction_key: {{PREDICTION_KEY}}
-    <br>classifier_version: {{PROJECT_NAME}}
     </body>
 </html>

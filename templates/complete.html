@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Complete</title>
+    <title>NotHotDog Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    <h1>Complete</h1>
+    <h1>Complete, you have...</h1>
     <ul>
     {% for label, probability in result_dict.items() %}
     <li>
