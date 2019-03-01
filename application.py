@@ -20,7 +20,7 @@ except KeyError:
 TRAINING_KEY = os.environ["TRAINING_KEY"]
 PREDICTION_KEY= os.environ["PREDICTION_KEY"]
 ENDPOINT = "https://australiaeast.api.cognitive.microsoft.com"
-SAMPLE_PROJECT_NAME = "nothotdog-classifier"
+PROJECT_NAME = os.environ["$PROJECT_NAME"]
 
 app = Flask(__name__)
 
@@ -60,7 +60,7 @@ def find_project():
     trainer = CustomVisionTrainingClient(TRAINING_KEY, endpoint=ENDPOINT)
 
     for proj in trainer.get_projects():
-        if (proj.name == SAMPLE_PROJECT_NAME):
+        if (proj.name == PROJECT_NAME):
             return proj
     
     return False
