@@ -20,7 +20,7 @@ except KeyError:
 TRAINING_KEY = os.environ["TRAINING_KEY"]
 PREDICTION_KEY= os.environ["PREDICTION_KEY"]
 ENDPOINT = "https://australiaeast.api.cognitive.microsoft.com"
-PROJECT_NAME = os.environ["$PROJECT_NAME"]
+PROJECT_NAME = os.environ["PROJECT_NAME"]
 
 app = Flask(__name__)
 
