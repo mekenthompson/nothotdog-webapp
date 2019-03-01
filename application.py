@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 
 from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
-
+#
 try:  
    os.environ["PREDICTION_KEY"]
 except KeyError: 
