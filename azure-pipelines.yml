@@ -54,5 +54,5 @@ jobs:
       versionSpec: '3.x'
       architecture: 'x64'
 
-  - script: python setup.py sdist
+  - script: cp -r . ./$(Build.ArtifactStagingDirectory)
     displayName: 'Build sdist'
