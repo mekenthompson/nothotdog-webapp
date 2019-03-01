@@ -51,7 +51,7 @@ jobs:
       architecture: 'x64'
 
   - script: |
-      cp -r . $(Build.ArtifactStagingDirectory)
+      rsync -aP --exclude=.git* * $(Build.ArtifactStagingDirectory)
       ls -al $(Build.ArtifactStagingDirectory)
     displayName: 'Build sdist'
 
