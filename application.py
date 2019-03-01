@@ -28,7 +28,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route("/")
 def index():
-    return render_template("upload.html")
+    return render_template("upload.html", PREDICTION_KEY=PREDICTION_KEY, TRAINING_KEY=TRAINING_KEY, PROJECT_NAME=PROJECT_NAME)
 
 @app.route("/upload", methods=['POST'])
 def upload():
