@@ -12,7 +12,10 @@ body
 	background-image: url("images/hotdog.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
-
+}
+a
+{
+	color: white
 }
 .upload-btn-wrapper 
 {
