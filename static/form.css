@@ -15,7 +15,8 @@ body
 }
 a
 {
-	color: white
+	color: white;
+	text-decoration: underline;
 }
 .upload-btn-wrapper 
 {
