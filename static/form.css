@@ -18,6 +18,16 @@ a
 	color: white;
 	text-decoration: underline;
 }
+a:hover {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
 .upload-btn-wrapper 
 {
   position: relative;
