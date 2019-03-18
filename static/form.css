@@ -9,9 +9,7 @@
 body
 {
 	background-color: #000;
-	background-image: url("images/hotdog.jpg");
-	background-size: cover;
-	background-repeat:no-repeat;
+	background-image: url("images/hotdog-pattern.jpg");
 }
 a
 {
